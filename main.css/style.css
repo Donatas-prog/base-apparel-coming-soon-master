@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 5rem;
+}
+.container {
+   width: 80%;
+   height: auto;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: center;
+   
+   
+    
+}
+.top {
+    display: none;
+}
+
+.hero-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.hero-desktop {
+    width: 100%;
+    min-height: 500px;
+}
+
+.logo {
+    width: 30%;
+    min-width: 8rem;
+    height: auto;
+    
+}
+.content {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 4rem;
+}
+
+.h1 {
+    
+    color: hsl(0, 36%, 70% );
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3rem; 
+    line-height: 3rem; 
+    ;  
+    font-weight: 300;
+    
+}
+p.param {
+    width: 90%;
+    color: hsl(0, 36%, 70% );
+    padding-top: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+
+}
+
+.come {
+    color: black;
+}
+.soon {
+    color: black;
+}
+form {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: 0 auto; 
+    max-width: 550px;
+    height: 50px;
+} 
+label {
+    visibility: hidden;
+    position: absolute;
+}
+#email { 
+    position: absolute; 
+    top: 0rem;
+    left: 0rem; 
+    padding: 1rem;
+    border: 1px solid  hsl(0, 36%, 70%);
+    border-radius: 2rem;
+    height: 100%;
+    width: 75%; 
+    outline: none;
+     
+     
+} 
+
+.input-container {
+    width: 100%;
+    min-width: 320px;
+    position: relative;
+
+}
+.button {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    background: linear-gradient(135deg,  hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    height: 50px;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    width: 90px;
+    transform: translate(-90%, 0px); 
+    box-shadow: 0 10px 50px -5px hsl(0, 36%, 70% );
+    
+    
+
+} 
+.button:active {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+input::placeholder {
+    color: hsl(0, 36%, 70% );
+    
+}
+.danger-button {
+    background: hsl(0, 93%, 68%);
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    top: .8rem;
+    right: 11rem; 
+    transition: 3s;
+    display: none;
+}
+#error {
+    
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    color: hsl(0, 93%, 68%);
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 999;
+    
+}
+.container form .klaida .error p {
+    display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+   body {
+       margin: 0;
+       width: 100%;
+       height: auto;
+       background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
+   }
+   .container {
+    display: cover;
+    height: initial;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+   .top-logo {
+    width: 100%;
+   }
+   .top {
+       display: block;
+       padding: 2rem;
+    } 
+   
+   .we {
+       margin-left: .6em;
+   }
+   .soon {
+       margin-left: .6em;
+   }
+   .hero-desktop {
+       display: none;
+   }
+   .hero-mobile {
+       display: flex;
+       min-width: 500px;
+       
+   }
+   p.param {
+    width: 100%;
+    text-align: center;
+   }
+   .logo {
+       display: none;
+   }
+   .content {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 6em 2em 5em 3em;
+       
+        
+     
+   }
+   .input-container {
+       display: block;
+      
+   } 
+   form {
+    width: 100%;
+    min-width: 350px;
+   }
+}
+
+    
+    
+
+    

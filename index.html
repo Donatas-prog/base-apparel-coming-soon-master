@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
@@ -13,28 +14,53 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link href="main.css/style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="Container">
-    <div class="top">
-      <h3>BASE APPAREL</h3>
+  <div class="container">
+    <div class="top-logo">
+      <div class="top_mobile_image"><img src="images/logo.svg" alt="top" class="top"></div>
     </div>
-    <h1>
-      <div class="header">WE'RE</div>COMING SOON
-    </h1>
-    <div class="paragraph">
-     <p>Hello fellow shoppers! We're currently building our new fashion store. 
-      Add your email below to stay up-to-date with announcements and our launch deals.</p> 
-    </div>
-    <div class="forma">
-      <form>
-        <label type="Email Address"></label>
-        <input type="text" id="mail" name="Email Address" value="Email Address">
-        <input type="submit" value="submit">
-      </form>
-    </div>
-  </div>
+      <div class="picture-container">
+        <img src="images/hero-desktop.jpg" alt="hero-desktop" class="hero-desktop">
+        <img src="images/hero-mobile.jpg" alt="hero-mobile" class="hero-mobile">
+      </div>
+      <div class="content">
+        <img src="images/logo.svg" alt="logo" class="logo">
+        <div class="h1">
+          <h1 class="we">WE'RE</h1> 
+          <div class="coming">
+             <h1 class="come">COMING </h1>
+             <h1 class="soon">SOON</h1>
+          </div>
+        </div>
+          <div class="paragraph">
+            <p class="param">
+              Hello fellow shoppers! We're currently building our new fashion store.
+              Add your email below to stay up-to-date with announcements and our launch deals.
+            </p>
+          </div>
+          <div id="formaa" class="input-container"> 
+            <div id="error" class="erorr"></div>
+          <form id="form" action="#">
+            <label for="Email">Email Address</label>
+            <input name="Email" id="email"  type="text" onkeyup="validationEmail()" placeholder="Email Address">
+            <img src="./images/icon-error.svg" alt="icon-error"  id="danger-button" class="danger-button">
+            
+              <button id="submit" class="button" type="submit" name="button">
+              <img src="images/icon-arrow.svg" alt="Arrow">
+              </button>
+              
+              
+        
+          
+            
+          </form>  
+        </div>
 
+      </div>
+    
+  </div>
   
 
   
@@ -45,8 +71,9 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Donatas Bucionis</a>.
     </p>
   </footer>
+  <script src="javascript/script.js"></script>
 </body>
 </html>
